@@ -51,4 +51,5 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * Keep the default in the Settings panel and select Next at the bottom.
 * For Web Application firewall (WAF), select `Do not enable security protections`
 * Let's review the configuration. Select `Create distribution` if everything looks good.
+
   Congratulation! You've just set up a CloudFront distribution.
