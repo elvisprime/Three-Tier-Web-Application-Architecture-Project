@@ -44,3 +44,5 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * In the distribution Options panel, enter a name to match your S3 bucket in the Distribution name.
 * Now for the Distribution type, select the Single website or app option.
 * Select `Next`
+* In the `Origin` panel, select the Browse S3 button
+<img src="Documents/Images/S3origin.png" width="600" height="400">
