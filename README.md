@@ -59,3 +59,4 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * Next, select the shortcut under the popup message. It lets go straight to your S3 bucket's Permissions tab
 * Select `Edit`
 * Past the Policy that you copied into the policy editor.
+<img src="Documents/Images/policy.png" width="600" height="400"> 
