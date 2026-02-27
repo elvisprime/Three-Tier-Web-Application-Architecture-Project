@@ -20,7 +20,7 @@ S3 acts like a huge, scalable hard drive in the cloud, allowing you to store and
 * Click Create bucket.
 * Enter a unique name for the bucket
 
-<img src="Documents/Images/Aimufuabucketname.png" width="600" height="400">
+<img src="Documents/Images/Bucketname.png" width="600" height="400">
 
 * Leave all other settings as default
 * Select Create bucket.
