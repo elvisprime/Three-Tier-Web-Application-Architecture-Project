@@ -41,3 +41,6 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 
 <img src="Documents/Images/Createdistribution.png" width="600" height="400">  
 
+* In the distribution Options panel, enter a name to match your S3 bucket in the Distribution name.
+* Now for the Distribution type, select the Single website or app optin.
+* Select ## Next
