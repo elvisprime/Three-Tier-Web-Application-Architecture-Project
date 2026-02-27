@@ -32,4 +32,6 @@ of our website.
 * style.css (virtual appearance: controls everything from font sizes and colors to layout designs)
 * script.js (This is a JavaScript file that adds interaction to your website)
 
+  <img src="Documents/Images/Webfiles.png" width="600" height="400">
+
 
