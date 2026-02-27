@@ -37,5 +37,6 @@ of our website.
 # Step 2: Distribute your content globally with Cloudfront
 * ## Create a CloudFront Distribution
 Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up the distribution of your static and dynamic web content, such as html, css, js and image files. Amazon CloudFront distribution is a configuration that controls how CloudFront delivers your content to users. It defines the location of your website files (known as the origin), determines how content is cached, and sets other delivery options such as security settings and performance rules.
-
+* Head to CloudFront Console
+  <img src="Documents/Images/createdistribution.png" width="600" height="400">  
 
