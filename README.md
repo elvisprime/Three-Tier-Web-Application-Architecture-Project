@@ -1,3 +1,3 @@
 # Three-Tier-Web-Application-Architecture Project
 This project demonstrates the design and deployment of a scalable three-tier web application using a structured Step-by-Step Process. The solution was built using Amazon S3 for static hosting, Amazon CloudFront for content delivery, AWS Lambda for serverless compute, Amazon API Gateway for API management, and Amazon DynamoDB for the database layer.
-<img src="Documents/Images/Architecture.png" width="400" height="500">
+<img src="Documents/Images/Architecture.png" width="600" height="400">
