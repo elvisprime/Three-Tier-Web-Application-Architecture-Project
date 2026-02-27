@@ -46,3 +46,6 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * Select `Next`
 * In the `Origin` panel, select the Browse S3 button
 <img src="Documents/Images/S3origin.png" width="600" height="400">
+* Select your bucket name and click Choose
+* Keep the default in the Settings panel and select Next at the bottom.
+* For Web Application firewall (WAF), select `Do not enable security protections`
