@@ -33,5 +33,9 @@ of our website.
 * script.js (This is a JavaScript file that adds interaction to your website)
 
   <img src="Documents/Images/webfiles.png" width="600" height="400">
-
+  
+# Step 2: Distribute your content globally with Cloudfront
+## * Create a CloudFront Distribution
+Amazon CloudFront distribution is a configuration that controls how CloudFront delivers your content to users.
+It defines the location of your website files (known as the origin), determines how content is cached, and sets other delivery options such as security settings and performance rules.
 
