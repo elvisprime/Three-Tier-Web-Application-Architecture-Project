@@ -60,3 +60,5 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * Select `Edit`
 * Past the Policy that you copied into the policy editor.
 <img src="Documents/Images/policy.png" width="600" height="400"> 
+
+ClICK `Save Changes`
