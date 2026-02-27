@@ -53,3 +53,9 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 * Let's review the configuration. Select `Create distribution` if everything looks good.
 
   Congratulation! You've just set up a CloudFront distribution.
+
+## Update your S3 bucket's settings 
+* In your CloudFront distribution's settings page, select Copy policy.
+* Next, select the shortcut under the popup message. It lets go straight to your S3 bucket's Permissions tab
+* Select `Edit`
+* Past the Policy that you copied into the policy editor.
