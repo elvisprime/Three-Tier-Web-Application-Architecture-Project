@@ -62,3 +62,5 @@ Amazon CloudFront is a Content Delivery Network (CDN) Which means it speeds up t
 <img src="Documents/Images/policy.png" width="600" height="400"> 
 
 ClICK `Save Changes`
+
+# Step 3: Build the brains of your Application using serverless functions with Lambda
