@@ -22,4 +22,14 @@ S3 acts like a huge, scalable hard drive in the cloud, allowing you to store and
 
 <img src="Documents/Images/Aimufuabucketname.png" width="600" height="400">
 
+* Leave all other settings as default
+* Select Create bucket.
+* Click into your created bucket. 
+## Upload Website files
+Now that we have our storage bucket set, let's fill it up with the actual content 
+of our website.
+* index.html (the main file of a website)
+* style.css (virtual appearance: controls everything from font sizes and colors to layout designs)
+* script.js (This is a JavaScript file that adds interaction to your website)
+
 
