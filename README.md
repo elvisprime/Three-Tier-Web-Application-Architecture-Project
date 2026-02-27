@@ -15,8 +15,8 @@ To get started, we need a place to store our website’s files and that’s wher
 S3 acts like a huge, scalable hard drive in the cloud, allowing you to store and access your files securely from anywhere.
 
 * Log in to the AWS Management Console as your IAM Admin user.
-** Make sure you're the AWS region closest to you.
-** Head to the S3 console. (Search S3 on AWS)
-** Click Create bucket.
-** Enter a unique name for the bucket
+* Make sure you're the AWS region closest to you.
+* Head to the S3 console. (Search S3 on AWS)
+* Click Create bucket.
+* Enter a unique name for the bucket
 
