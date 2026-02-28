@@ -71,3 +71,4 @@ To make this functionality accessible externally, we’ll use API Gateway to rec
 * Create an API Gateway REST API.
 * Create a resource and method to handle GET requests.
 * Deploy the API to make it accessible.
+###  Create a Lambda function to fetch data from a DynamoDB table
