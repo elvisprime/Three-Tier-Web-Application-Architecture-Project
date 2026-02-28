@@ -76,3 +76,4 @@ AWS Lambda is a service that lets you run your code without creating or managing
 * Search Lambda on AWS Management console.
 * Click Create Function.
 * For Function  name, enter `RetrieveUserDataAimufua`
+* For Runtime, select a runtime using Node.js
