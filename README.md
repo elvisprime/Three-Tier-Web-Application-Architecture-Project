@@ -72,3 +72,7 @@ To make this functionality accessible externally, we’ll use API Gateway to rec
 * Create a resource and method to handle GET requests.
 * Deploy the API to make it accessible.
 ###  Create a Lambda function to fetch data from a DynamoDB table
+AWS Lambda is a service that lets you run your code without creating or managing a server.
+* Search Lambda on AWS Management console.
+* Click Create Function.
+* For Function  name, enter `RetrieveUserDataAimufua`
