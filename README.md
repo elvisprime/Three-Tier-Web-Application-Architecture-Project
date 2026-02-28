@@ -65,4 +65,4 @@ ClICK `Save Changes`
 
 # Step 3: Build the brains of your Application using serverless functions with Lambda
 In this project, our backend logic will be a simple Lambda function that fetches user data from a DynamoDB table.
-To make this functionality accessible externally, we’ll use API Gateway to receive incoming requests and route them to the appropriate Lambda function for processing
+To make this functionality accessible externally, we’ll use API Gateway to receive incoming requests and route them to theappropriate Lambda function for processing
