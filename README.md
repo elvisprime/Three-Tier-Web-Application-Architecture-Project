@@ -139,8 +139,15 @@ We're using a REST API today to setup an API that connects the user with your La
 * Crate an New API
 <img src="Documents/Images/APIgateway.png" width="600" height="400">
 
+* Find REST API
+* Select Build
+* Under API details, select New API
 * For API name, enter AimufuaUserRequestAPI
 * For API endpoint type, select Regional
 * Create API
+
+Next, we'll figure out how our app can be the bridge between our users and the API. in other words, how can users send requests? That's where API resources come in!
+## Set Up an API Resource
+
 
   
