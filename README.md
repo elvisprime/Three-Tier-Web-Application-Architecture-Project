@@ -148,6 +148,9 @@ We're using a REST API today to setup an API that connects the user with your La
 
 Next, we'll figure out how our app can be the bridge between our users and the API. in other words, how can users send requests? That's where API resources come in!
 ## Set Up an API Resource
-
+* Under Resourcess, select Create resource
+* For Resource name, enter users
+* Select Create resource
+* Select the /users resource
 
   
