@@ -165,4 +165,13 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
 * For the Lambda function, make sure the default region selected is where you've created your function.
 <img src="Documents/Images/lambdaname.png" width="600" height="400">
 
-  * For the Lambda function, make sure the default region selected is where you've created your function
+  * Select Deploy API
+  * For stage Select new
+(API Gateway lets you deploy different versions of your API to different stages. This way, you can easily control who accesses what version of your API and when.)
+  * For stage name, enter prod
+  * Select Deploy
+    ### Visit your API
+  * On the same page, find your prod stage's Invoke URL.
+  * Copy the Invoke URL
+  * Access the URL in a new tab on your browser.
+    Ooops..Yes, you'll get an error because we haven't set up our DynamoDB table yet. That's okay! We're getting to that next 
