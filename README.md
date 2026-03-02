@@ -174,4 +174,5 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
   * On the same page, find your prod stage's Invoke URL.
   * Copy the Invoke URL
   * Access the URL in a new tab on your browser.
+    
     Ooops..Yes, you'll get an error because we haven't set up our DynamoDB table yet. That's okay! We're getting to that next 
