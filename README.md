@@ -82,6 +82,50 @@ AWS Lambda is a service that lets you run your code without creating or managing
 ## Write Lambda Function Code
 * Scroll down to the Code source panel
 * Copy and paste the following code into the code editor, replacing Region Region with your actual AWS region (e.g, 'us-west-2)
+```// Import individual components from the DynamoDB client package
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
+
+const ddbClient = new DynamoDBClient({ region: 'YOUR_REGION' });
+const ddb = DynamoDBDocumentClient.from(ddbClient);
+
+async function handler(event) {
+    const userId = event.queryStringParameters.userId;
+    const params = {
+        TableName: 'UserData',
+        Key: { userId }
+    };
+
+    try {
+        const command = new GetCommand(params);
+        const { Item } = await ddb.send(command);
+        if (Item) {
+            return {
+                statusCode: 200,
+                body: JSON.stringify(Item),
+                headers: {'Content-Type': 'application/json'}
+            };
+        } else {
+            return {
+                statusCode: 404,
+                body: JSON.stringify({ message: "No user data found" }),
+                headers: {'Content-Type': 'application/json'}
+            };
+        }
+    } catch (err) {
+        console.error("Unable to retrieve data:", err);
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ message: "Failed to retrieve user data" }),
+            headers: {'Content-Type': 'application/json'}
+        };
+    }
+}
+
+export { handler };```
+
+
+  
 * Check: Make sure you've updated the placeholder region YOUR REGION to your own region code.
 * Select Deploy This saves your code and makes the function ready to use.
 * Check for the Deployment successful in he botton righ corner of the console.
