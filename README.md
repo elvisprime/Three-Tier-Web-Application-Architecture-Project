@@ -131,6 +131,7 @@ export { handler };
 * Select `Deploy` This saves your code and makes the function ready to use.
 * Check for the Deployment successful in he botton righ corner of the console
 
+# Step 4: Create an API to handle user requests with API Gateway
 ## Set up API Gateway
 Now that we have our Lambda function ready, we need a way to access it. This is where API Gateway comes in.
 In this project, we're creating an API that carries requests from your user's browser to your Lambda function.
