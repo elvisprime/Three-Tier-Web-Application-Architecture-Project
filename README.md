@@ -153,4 +153,6 @@ Next, we'll figure out how our app can be the bridge between our users and the A
 * Select Create resource
 * Select the /users resource
 <img src="Documents/Images/API.png" width="600" height="400">
-  
+
+ ## Set Up a Resource Method 
+To round off our API's setup, let's create an API method. A resource method is the HTTP action you attach to a specific API path (resource). It defines what can be done on that resource.
