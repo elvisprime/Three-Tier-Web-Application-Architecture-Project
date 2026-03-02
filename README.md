@@ -82,6 +82,7 @@ AWS Lambda is a service that lets you run your code without creating or managing
 ## Write Lambda Function Code
 * Scroll down to the Code source panel
 * Copy and paste the following code into the code editor, replacing Region Region with your actual AWS region (e.g, 'us-west-2)
+  
 ```// Import individual components from the DynamoDB client package
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
@@ -122,7 +123,9 @@ async function handler(event) {
     }
 }
 
-export { handler }; ```
+export { handler };
+
+```
 
 * Check: Make sure you've updated the placeholder region YOUR REGION to your own region code.
 * Select Deploy This saves your code and makes the function ready to use.
