@@ -124,8 +124,3 @@ async function handler(event) {
 
 export { handler };```
 
-
-  
-* Check: Make sure you've updated the placeholder region YOUR REGION to your own region code.
-* Select Deploy This saves your code and makes the function ready to use.
-* Check for the Deployment successful in he botton righ corner of the console.
