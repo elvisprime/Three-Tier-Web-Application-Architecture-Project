@@ -177,5 +177,5 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
   * Copy the Invoke URL
   * Access the URL in a new tab on your browser.
 <img src="Documents/Images/missingtoken.png" width="600" height="400">
- 
-    Ooops..Yes, you'll get an error because we haven't set up our DynamoDB table yet. That's okay! We're getting to that next 
+
+ Yes, you'll get an error because we haven't set up our DynamoDB table yet. That's okay! We're getting to that next 
