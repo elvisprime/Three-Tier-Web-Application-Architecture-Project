@@ -163,6 +163,6 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
 
 * Switch on Lambda Proxy Integretion
 * For the Lambda function, make sure the default region selected is where you've created your function.
-<img src="Documents/Images/Lambdaname.png" width="600" height="400">
+<img src="Documents/Images/lambdaname.png" width="600" height="400">
 
   * For the Lambda function, make sure the default region selected is where you've created your function
