@@ -131,3 +131,9 @@ export { handler };
 * Select `Deploy` This saves your code and makes the function ready to use.
 * Check for the Deployment successful in he botton righ corner of the console
 
+## Set up API Gateway
+Now that we have our Lambda function ready, we need a way to access it. This is where API Gateway comes in.
+In this project, we're creating an API that carries requests from your user's browser to your Lambda function.
+We're using a REST API today to setup an API that connects the user with your Lambda function.
+* In the AWS Management Console, head to the API Gateway Console.
+* Crate an New API
