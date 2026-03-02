@@ -79,3 +79,9 @@ AWS Lambda is a service that lets you run your code without creating or managing
 * For Runtime, select a runtime using `Node.js`
 * For Architecture, select `x86_64`
 * Select Create function
+## Write Lambda Function Code
+* Scroll down to the Code source panel
+* Copy and paste the following code into the code editor, replacing Region Region with your actual AWS region (e.g, 'us-west-2)
+* Check: Make sure you've updated the placeholder region YOUR REGION to your own region code.
+* Select Deploy This saves your code and makes the function ready to use.
+* Check for the Deployment successful in he botton righ corner of the console.
