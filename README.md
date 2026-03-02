@@ -139,3 +139,8 @@ We're using a REST API today to setup an API that connects the user with your La
 * Crate an New API
 <img src="Documents/Images/APIgateway.png" width="600" height="400">
 
+* For API name, enter AimufuaUserRequestAPI
+* For API endpoint type, select Regional
+* Create API
+
+  
