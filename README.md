@@ -154,5 +154,9 @@ Next, we'll figure out how our app can be the bridge between our users and the A
 * Select the /users resource
 <img src="Documents/Images/API.png" width="600" height="400">
 
- ## Set Up a Resource Method 
-To round off our API's setup, let's create an API method. A resource method is the HTTP action you attach to a specific API path (resource). It defines what can be done on that resource.
+ ## Set Up an API Method 
+To round off our API's setup, let's create an API method. The action (HTTP request type) that is allowed on a specific resource (URL path). or we can say an API method is the HTTP request type attached to a resource.
+* In the Methods panel, select Create method
+* Select GET from the Method type drop down
+* Select Lambda Function for the Integration type.
+<img src="Documents/Images/Lambdafunction.png" width="600" height="400">  
