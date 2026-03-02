@@ -137,3 +137,5 @@ In this project, we're creating an API that carries requests from your user's br
 We're using a REST API today to setup an API that connects the user with your Lambda function.
 * In the AWS Management Console, head to the API Gateway Console.
 * Crate an New API
+<img src="Documents/Images/APIgateway.png" width="600" height="400">
+
