@@ -152,5 +152,5 @@ Next, we'll figure out how our app can be the bridge between our users and the A
 * For Resource name, enter users
 * Select Create resource
 * Select the /users resource
-
+<img src="Documents/Images/API.png" width="600" height="400">
   
