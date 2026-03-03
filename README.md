@@ -244,6 +244,21 @@ It's time for us to test our API:
   
 <img src="Documents/Images/LinkTEST.png" width="600" height="400">
 
+We just finished the Logic and data verification
+## Verify the distributed website
+* Go back to the CloudFront console.
+* Locate your distribution and copy the Distribution Domain Name (URL).
+* Open the URL in your browser.
+* Try entering 1 in the userId field and selecting Get User Data.
+* Do you see data returned to you?
+
+BUT NOT YET....
+
+## We need to update the connection between the presentation and logic tiers
+Where do you think your website is connected to your Lambda function?
+* You can troubleshoot frontend errors using your browser's developer tools.
+* Open your browser's developer tools, usually by pressing `F12` on the keyboard. If you are using Opera mini `Ctrl + Shift + I`
+
 
 
 
