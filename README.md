@@ -182,3 +182,10 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
  Yes, you'll get an error because we haven't set up our DynamoDB table yet. That's okay! We're getting to that next
  
 # Step 5: Store and retrieve user data with DynamoDB
+The data tier is where you store all the data that your application uses. We'll use DynamoDB to store some user data.
+### Create a DynamoDB table.
+### Add user data into your table.
+* Head to the DynamoDB Console
+* Select Create table
+* For Table name, enter UserData
+
