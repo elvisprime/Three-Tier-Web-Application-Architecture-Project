@@ -229,3 +229,9 @@ DynamoDB stores your data in JSON! By switching to JSON view, you can edit your 
 
 Permissions added. This means your Lambda function should be able to read DynamoDB table items.
 With the data tier officially ticked off, now we're official
+
+# Step 6: Connect all these services together seamlessly for your three-tier architecture
+Now, it's time to connect them. We'll update our index.html file to make a request to our API Gateway endpoint and display the returned data.ly ready to merge the three layers
+* Update your script.js file with JavaScript code to make an API request.
+* Verify that the data is displayed on your website.
+
