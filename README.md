@@ -189,7 +189,9 @@ The data tier is where you store all the data that your application uses. We'll 
 * Select Create table
 * For Table name, enter UserData
 * For Partition key, enter UserId
+<img src="Documents/Images/DynamoDB.png" width="600" height="400">
+  
 * Select String as the data type for the partition key.
 * Leave the default settings for the rest of the options.
-
+<img src="Documents/Images/UserData.png" width="600" height="400">
 
