@@ -195,3 +195,20 @@ The data tier is where you store all the data that your application uses. We'll 
 * Leave the default settings for the rest of the options.
 <img src="Documents/Images/UserData.png" width="600" height="400">
 
+Now that we have our DynamoDB table set up, let's add some sample data so we can see our Lambda function in action later.
+* We'll wait until the table status changes to Active. While we wait...
+* Once the table status changes to Active, select your UserData table.
+* Select Explore table items
+* At the Items returned panel, select Create item.
+* Select Switch to JSON view.
+DynamoDB stores your data in JSON! By switching to JSON view, you can edit your data in a code format instead of filling out a form.
+* Switch off View DynamoDB JSON.
+* Paste the following JSON into the editor:
+
+  ``` {
+  "userId": "1",
+  "name": "Test User",
+  "email": "test@example.com"
+}
+            ```
+  
