@@ -201,6 +201,7 @@ Now that we have our DynamoDB table set up, let's add some sample data so we can
 * Select Explore table items
 * At the Items returned panel, select Create item.
 * Select Switch to JSON view.
+
 DynamoDB stores your data in JSON! By switching to JSON view, you can edit your data in a code format instead of filling out a form.
 * Switch off View DynamoDB JSON.
 * Paste the following JSON into the editor:
@@ -210,4 +211,16 @@ DynamoDB stores your data in JSON! By switching to JSON view, you can edit your 
   "name": "Test User",
   "email": "test@example.com"
  
-  
+  * Select Create Item
+  That's a piece of data in our DynamoDB table now
+
+  ### Grant DynamoDB access to Lambda
+ * Head back to your Lambda console.
+ * Switch to the Configuration tab in your Lambda function
+ * Select Permissions
+ * Select the execution role name, it will look something like `RetrieveUserData-role-xxxxxxxx.`
+ * This shortcut will take you to the IAM console, with your Lambda function readily open.
+ * Select Add Permissions
+ * Select Attach Policies
+ * Type DynamoDB in the search bar.
+ * Select AmazonDynamoDBReadOnlyAccess as the permission policy we'll use.
