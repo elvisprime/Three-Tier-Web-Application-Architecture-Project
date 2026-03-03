@@ -241,6 +241,7 @@ It's time for us to test our API:
 * Append /users?userId=1 to the end of the URL you've copied.
 * Run the edited URL in your web browser.
 * you can see your table's data getting returned by the API.
+<img src="Documents/Images/linkTEST.png" width="600" height="400">
 
 
 
