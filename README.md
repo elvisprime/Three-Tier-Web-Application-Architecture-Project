@@ -209,6 +209,5 @@ DynamoDB stores your data in JSON! By switching to JSON view, you can edit your 
   "userId": "1",
   "name": "Test User",
   "email": "test@example.com"
-}
-```
+}```
   
