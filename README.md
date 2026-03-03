@@ -238,4 +238,12 @@ Now, it's time to connect them. We'll update our index.html file to make a reque
 It's time for us to test our API:
 * Head back into your API Gateway console.
 * Copy your prod stage API's Invoke URL.
+* Append /users?userId=1 to the end of the URL you've copied.
+* Run the edited URL in your web browser.
+* you can see your table's data getting returned by the API.
+
+
+
+
+
 
