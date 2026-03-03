@@ -234,4 +234,8 @@ With the data tier officially ticked off, now we're official
 Now, it's time to connect them. We'll update our index.html file to make a request to our API Gateway endpoint and display the returned data.ly ready to merge the three layers
 * Update your script.js file with JavaScript code to make an API request.
 * Verify that the data is displayed on your website.
+## Verify API Functionality
+It's time for us to test our API:
+* Head back into your API Gateway console.
+* Copy your prod stage API's Invoke URL.
 
