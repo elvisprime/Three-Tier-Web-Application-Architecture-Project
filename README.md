@@ -224,3 +224,6 @@ DynamoDB stores your data in JSON! By switching to JSON view, you can edit your 
  * Select Attach Policies
  * Type DynamoDB in the search bar.
  * Select AmazonDynamoDBReadOnlyAccess as the permission policy we'll use.
+ * Select Add Permissions
+Permissions added. This means your Lambda function should be able to read DynamoDB table items.
+With the data tier officially ticked off, now we're official
