@@ -354,8 +354,11 @@ export { handler };
  ```
 
 * For security best practice, replace * with your CloudFront domain name. Keeping Access-Control-Allow-Origin means you're allowing everyone to use your API, but we should restrict access to just your CloudFront distribution.
+<img src="Documents/Images/finaltest.png" width="600" height="400">
+  
 * Select Deploy to deploy your updated function.
 
 Now let's do a final Test...
 Let's do one more refresh of our CloudFront domain name.
 You should now see the data fetched from DynamoDB displayed on your website!
+<img src="Documents/Images/userinformation.png" width="600" height="400">
