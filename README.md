@@ -373,3 +373,17 @@ Now let's do a final Test...
 Let's do one more refresh of our CloudFront domain name.
 You should now see the data fetched from DynamoDB displayed on your website!
 <img src="Documents/Images/finaltest.png" width="600" height="400">
+
+## That's it!
+We just built a three-tier web app on AWS
+
+# Troubleshooting
+### S3 File Path Sensitivity
+Amazon S3 is case-sensitive and path-sensitive
+* Ensure your files are arranged correctly in the bucket.
+* Make sure the file names in index.html match the exact names in S3.
+
+### DynamoDB Case Sensitivity
+Amazon DynamoDB is also case-sensitive.
+* The partition key name must match exactly.
+* If your table key is userId, using UserId or userid in your Lambda code will fail.
