@@ -387,3 +387,7 @@ Amazon S3 is case-sensitive and path-sensitive
 Amazon DynamoDB is also case-sensitive.
 * The partition key name must match exactly.
 * If your table key is userId, using UserId or userid in your Lambda code will fail.
+
+ ## Additional Notes
+  * To prevent unnecessary charges, I removed the resources from my AWS console after completing the project. As a result, this GitHub repository now serves as the primary showcase of my work. I have carefully documented each step and included detailed explanations to provide a clear and comprehensive understanding of my approach.
+ 
