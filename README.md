@@ -361,4 +361,4 @@ export { handler };
 Now let's do a final Test...
 Let's do one more refresh of our CloudFront domain name.
 You should now see the data fetched from DynamoDB displayed on your website!
-<img src="Documents/Images/userinformation.png" width="600" height="400">
+<img src="Documents/Images/finaltest.png" width="600" height="400">
