@@ -71,7 +71,7 @@ Now, let's check if our website is live! Head back into your CloudFront console.
 * Past the domain name into your web browser.
 <img src="Documents/Images/userinformation.png" width="600" height="400">
   
-Our website distribution over cloudfront is successful!
+Our website distribution over cloudfront was successful!
 
 
 # Step 3: Build the brains of your Application using serverless functions with Lambda
