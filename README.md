@@ -280,5 +280,18 @@ In this step, you will:
 * Also, you can use the Console developer tool to investigte your error.
 <img src="Documents/Images/oneerror.png" width="600" height="400">
 
-
+### What's the error this time?
 The CORS (Cross-Origin Resource Sharing) error occurs because your Amazon API Gateway is currently configured to accept requests only from its direct invoke URL. At the moment, the API is not allowing requests coming from your Amazon CloudFront domain where your frontend application is hosted. To fix this issue, you need to enable CORS on your API Gateway so that it allows requests originating from your frontend website’s domain.
+
+### Configure CORS on API Gateway
+* Head back to the Amazon API Gateway console in your AWS account.
+* Navigate to the Resources tab.
+* Select the /users resource.
+* Select Enable CORS.
+* In the CORS configuration, check both GET and OPTIONS under Access-Control-Allow-Methods.
+* Enter your CloudFront distribution domain name as the Access-Control-Allow-Origin value. This will allow requests from your CloudFront domain to your API.
+### Deploy Your API
+After enabling CORS, you must redeploy your API for the changes to take effect:
+* Select Deploy API.
+* Choose your deployment stage i.e. prod.
+* Click Deploy to update the stage.
