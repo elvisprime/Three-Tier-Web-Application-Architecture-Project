@@ -295,3 +295,67 @@ After enabling CORS, you must redeploy your API for the changes to take effect:
 * Select Deploy API.
 * Choose your deployment stage i.e. prod.
 * Click Deploy to update the stage.
+  
+### Add CORS Headers in Your Lambda Function
+* Update your Lambda function code to include the `Access-Control-Allow-Origin` header in the response
+Check: Have you updated `YOUR_REGION` to your region's code?
+
+``` // Import individual components from the DynamoDB client package
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { DynamoDBDocumentClient, GetCommand } from "@aws-sdk/lib-dynamodb";
+
+const ddbClient = new DynamoDBClient({ region: 'YOUR_REGION' });
+const ddb = DynamoDBDocumentClient.from(ddbClient);
+
+async function handler(event) {
+    const userId = event.queryStringParameters.userId;
+    const params = {
+        TableName: 'UserData',
+        Key: { userId }
+    };
+
+    try {
+        const command = new GetCommand(params);
+        const { Item } = await ddb.send(command);
+
+        if (Item) {
+            return {
+                statusCode: 200,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*' // Allow CORS for all origins, replace '*' with specific domain in production
+                },
+                body: JSON.stringify(Item)
+            };
+        } else {
+            return {
+                statusCode: 404,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                body: JSON.stringify({ message: "No user data found" })
+            };
+        }
+    } catch (err) {
+        console.error("Unable to retrieve data:", err);
+        return {
+            statusCode: 500,
+            headers: {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
+            body: JSON.stringify({ message: "Failed to retrieve user data" })
+        };
+    }
+}
+
+export { handler };
+ ```
+
+* For security best practice, replace * with your CloudFront domain name. Keeping Access-Control-Allow-Origin means you're allowing everyone to use your API, but we should restrict access to just your CloudFront distribution.
+* Select Deploy to deploy your updated function.
+
+Now let's do a final Test...
+Let's do one more refresh of our CloudFront domain name.
+You should now see the data fetched from DynamoDB displayed on your website!
