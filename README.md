@@ -65,9 +65,13 @@ ClICK `Save Changes`
 
 ### Verify Your CloudFront Distribution
 Now, let's check if our website is live! Head back into your CloudFront console.
+<img src="Documents/Images/cloudfront.png" width="600" height="400"> 
 
-Copy the distribution domain name. This is the URL that CloudFront will use to serve your website.
-
+* Copy the distribution domain name. This is the URL that CloudFront will use to serve your website.
+* Past the domain name into your web browser.
+<img src="Documents/Images/userinformation.png" width="600" height="400">
+  
+Our website distribution over cloudfront is successful!
 
 
 # Step 3: Build the brains of your Application using serverless functions with Lambda
