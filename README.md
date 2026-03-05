@@ -188,7 +188,7 @@ The data tier is where you store all the data that your application uses. We'll 
 * Head to the DynamoDB Console
 * Select Create table
 * For Table name, enter UserData
-* For Partition key, enter UserId
+* For Partition key, enter userId
 <img src="Documents/Images/DynamoDB2.png" width="600" height="400">
   
 * Select String as the data type for the partition key.
@@ -258,9 +258,27 @@ BUT NOT YET....
 Where do you think your website is connected to your Lambda function?
 * You can troubleshoot frontend errors using your browser's developer tools.
 * Open your browser's developer tools, usually by pressing `F12` on the keyboard. If you are using Opera mini `Ctrl + Shift + I`
+* Select Console
+Read the entire error message - notice that it actually references where you can find the URL: 
+<img src="Documents/Images/error.png" width="600" height="400">
+
+That's right, this URL is in line 9 of our `script.js` file.
+* Open your local computer's Downloads folder.
+* Open script.js in a code/text editor.
+* There you will see a line that directly references [YOUR-PROD-API-URL]
+<img src="Documents/Images/Editedcode.png" width="600" height="400">
+
+## Validate a Fully Functioning Web Application
+Now it’s time to verify that your web application is working correctly. Try searching for items in the app to confirm everything functions as expected.
+
+In this step, you will:
+* Test your Amazon CloudFront website again.
+* Resolve an error on the browser side
+### Verify Your CloudFront Site
+* Access your website through the CloudFront URL again.
+* Can you see your data now?
+* Also, you can use the Console developer tool to investigte your error.
+<img src="Documents/Images/oneerror.png" width="600" height="400">
 
 
-
-
-
-
+The CORS (Cross-Origin Resource Sharing) error occurs because your Amazon API Gateway is currently configured to accept requests only from its direct invoke URL. At the moment, the API is not allowing requests coming from your Amazon CloudFront domain where your frontend application is hosted. To fix this issue, you need to enable CORS on your API Gateway so that it allows requests originating from your frontend website’s domain.
