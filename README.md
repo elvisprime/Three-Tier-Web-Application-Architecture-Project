@@ -242,14 +242,14 @@ Permissions added. This means your Lambda function should be able to read Dynamo
 With the data tier officially ticked off, now we're official
 
 # Step 6: Connect all these services together seamlessly for your three-tier architecture
-Now, it's time to connect them. We'll update our index.html file to make a request to our API Gateway endpoint and display the returned data.ly ready to merge the three layers
-* Update your script.js file with JavaScript code to make an API request.
+Now, it's time to connect them. We'll update our `index.html` file to make a request to our API Gateway endpoint and display the returned data.ly ready to merge the three layers
+* Update your `script.js` file with JavaScript code to make an API request.
 * Verify that the data is displayed on your website.
 ## Verify API Functionality
 It's time for us to test our API:
 * Head back into your API Gateway console.
 * Copy your prod stage API's Invoke URL.
-* Append /users?userId=1 to the end of the URL you've copied.
+* Append `/users?userId=1` to the end of the URL you've copied.
 * Run the edited URL in your web browser.
 * you can see your table's data getting returned by the API.
   
@@ -260,7 +260,7 @@ We just finished the Logic and data verification
 * Go back to the CloudFront console.
 * Locate your distribution and copy the Distribution Domain Name (URL).
 * Open the URL in your browser.
-* Try entering 1 in the userId field and selecting Get User Data.
+* Try entering `1` in the userId field and selecting `Get User Data.`
 * Do you see data returned to you?
 
 BUT NOT YET....
