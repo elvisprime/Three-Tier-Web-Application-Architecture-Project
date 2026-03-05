@@ -354,7 +354,7 @@ export { handler };
  ```
 
 * For security best practice, replace * with your CloudFront domain name. Keeping Access-Control-Allow-Origin means you're allowing everyone to use your API, but we should restrict access to just your CloudFront distribution.
-<img src="Documents/Images/finaltest.png" width="600" height="400">
+<img src="Documents/Images/lambdafunc.png" width="600" height="400">
   
 * Select Deploy to deploy your updated function.
 
