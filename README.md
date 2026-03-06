@@ -8,7 +8,7 @@ This project demonstrates the design and deployment of a scalable three-tier web
 2. Distribute your content globally with Cloudfront
 3. Build the brains of your Application using serverless functions with Lambda
 4. Create an API to handle user requests with **API Gateway**
-5. Store and retrieve user data with DynamoDB
+5. Store and retrieve user data with **DynamoDB**
 6. Connect all these services together seamlessly for your three-tier architecture
 # Step 1: Create a Storage bucket for your website's files with S3
 To get started, we need a place to store our website’s files and that’s where Amazon S3 comes in.
@@ -16,7 +16,7 @@ S3 acts like a huge, scalable hard drive in the cloud, allowing you to store and
 
 * Log in to the AWS Management Console as your IAM Admin user.
 * Make sure you're the AWS region closest to you.
-* Head to the S3 console. (Search S3 on AWS)
+* Head to the **S3 console.** (Search S3 on AWS)
 * Click Create bucket.
 * Enter a unique name for the bucket
 
@@ -181,7 +181,7 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
   * For stage Select new
 (API Gateway lets you deploy different versions of your API to different stages. This way, you can easily control who accesses what version of your API and when.)
   * For stage name, enter prod
-  * Select Deploy
+  * Select **Deploy**
     ### Visit your API
   * On the same page, find your prod stage's Invoke URL.
 <img src="Documents/Images/Invoke.png" width="600" height="400">
@@ -196,10 +196,10 @@ To round off our API's setup, let's create an API method. The action (HTTP reque
 The data tier is where you store all the data that your application uses. We'll use DynamoDB to store some user data.
 ### Create a DynamoDB table.
 ### Add user data into your table.
-* Head to the DynamoDB Console
+* Head to the **DynamoDB Console**
 * Select Create table
 * For Table name, enter UserData
-* For Partition key, enter userId
+* For **Partition key,** enter userId
 <img src="Documents/Images/DynamoDB2.png" width="600" height="400">
   
 * Select String as the data type for the partition key.
@@ -209,13 +209,13 @@ The data tier is where you store all the data that your application uses. We'll 
 Now that we have our DynamoDB table set up, let's add some sample data so we can see our Lambda function in action later.
 * We'll wait until the table status changes to Active. While we wait...
 * Once the table status changes to Active, select your UserData table.
-* Select Explore table items
+* Select Explore **table items**
 * At the Items returned panel, select Create item.
 * Select Switch to JSON view.
 
 DynamoDB stores your data in JSON! By switching to JSON view, you can edit your data in a code format instead of filling out a form.
-* Switch off View DynamoDB JSON.
-* Paste the following JSON into the editor:
+* Switch off View **DynamoDB JSON.**
+* Paste the following **JSON** into the editor:
 
   ```{
   "userId": "1",
