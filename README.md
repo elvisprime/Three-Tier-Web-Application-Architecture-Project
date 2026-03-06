@@ -7,7 +7,7 @@ This project demonstrates the design and deployment of a scalable three-tier web
 1. Create a Storage bucket for your website's files with S3
 2. Distribute your content globally with Cloudfront
 3. Build the brains of your Application using serverless functions with Lambda
-4. Create an API to handle user requests with API Gateway
+4. Create an API to handle user requests with **API Gateway**
 5. Store and retrieve user data with DynamoDB
 6. Connect all these services together seamlessly for your three-tier architecture
 # Step 1: Create a Storage bucket for your website's files with S3
