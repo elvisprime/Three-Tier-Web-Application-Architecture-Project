@@ -257,7 +257,7 @@ It's time for us to test our API:
 
 We just finished the Logic and data verification
 ## Verify the distributed website
-* Go back to the CloudFront console.
+* Go back to the **CloudFront console.**
 * Locate your distribution and copy the Distribution Domain Name (URL).
 * Open the URL in your browser.
 * Try entering `1` in the userId field and selecting `Get User Data.`
@@ -269,13 +269,13 @@ BUT NOT YET....
 Where do you think your website is connected to your Lambda function?
 * You can troubleshoot frontend errors using your browser's developer tools.
 * Open your browser's developer tools, usually by pressing `F12` on the keyboard. If you are using Opera mini `Ctrl + Shift + I`
-* Select Console
+* Select **Console tab**
 Read the entire error message - notice that it actually references where you can find the URL: 
 <img src="Documents/Images/error.png" width="600" height="400">
 
 That's right, this URL is in line 9 of our `script.js` file.
 * Open your local computer's Downloads folder.
-* Open script.js in a code/text editor.
+* Open **script.js** in a code/text editor.
 * There you will see a line that directly references [YOUR-PROD-API-URL]
 <img src="Documents/Images/Editedcode.png" width="600" height="400">
 
@@ -298,14 +298,14 @@ The CORS (Cross-Origin Resource Sharing) error occurs because your Amazon API Ga
 * Head back to the Amazon API Gateway console in your AWS account.
 * Navigate to the Resources tab.
 * Select the /users resource.
-* Select Enable CORS.
+* Select Enable **CORS.**
 * In the CORS configuration, check both GET and OPTIONS under Access-Control-Allow-Methods.
-* Enter your CloudFront distribution domain name as the Access-Control-Allow-Origin value. This will allow requests from your CloudFront domain to your API.
+* Enter your CloudFront distribution domain name as the **Access-Control-Allow-Origin** value. This will allow requests from your CloudFront domain to your API.
 ### Deploy Your API
-After enabling CORS, you must redeploy your API for the changes to take effect:
+After enabling **CORS,** you must redeploy your API for the changes to take effect:
 * Select Deploy API.
 * Choose your deployment stage i.e. prod.
-* Click Deploy to update the stage.
+* Click **Deploy** to update the stage.
   
 ### Add CORS Headers in Your Lambda Function
 * Update your Lambda function code to include the `Access-Control-Allow-Origin` header in the response
